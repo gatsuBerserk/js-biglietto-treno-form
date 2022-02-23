@@ -1,8 +1,17 @@
 .my-bg-color{
-    background-color: tomato;
+    background-color: tomato; 
+    height: 100vh;
 } 
+
+.my-bg-color-white{
+    background-color: whitesmoke;
+}
 
 .my-border{
     border: 1px solid yellow;
-    border-radius: 50px;
+
+} 
+
+.my-size{
+    height: 150px;
 }

@@ -10,10 +10,11 @@
     <title>Biglietto treno form Carmine Passante classe 55</title>
 </head>
 <body> 
-    <main > 
+    <main class="my-bg-color" > 
+         <!--User data  -->
         <section id="info">
             <div class="container-fluid">
-                <div class="row text-center mt-4">
+                <div class="row text-center pt-4 text-white">
                     <div class="col-12">
                         <h1>
                             Calcola il prezzo del tuo biglietto
@@ -39,7 +40,7 @@
                         <h4>
                             Fascia d'età
                         </h4> 
-                        <select name="" id="age"> 
+                        <select name="" class="" id="age" > 
                             <option value="underage">Minorenne</option>
                             <option value="adult">Maggiorenne</option> 
                             <option value="over">Over 65</option>
@@ -47,16 +48,59 @@
                     </div> 
                 
                     <div class="col-12 text-center mt-5 ">
-                        <button type="button" class="btn btn-outline-success" id="sending">
+                        <button type="button" class="btn btn-success m-4" id="sending">
                             Genera
                         </button>
-                        <button type="button" class="btn btn-outline-danger" id="cancel">
+                        <button type="button" class="btn btn-danger m-4" id="cancel">
                             Annulla
                         </button>
                     </div> 
                 </div>
             </div>
-        </section>
+        </section> 
+        <!-- /User data --> 
+        
+        <!-- Ticket -->
+        <section id="ticket" class="d-none">
+            <div class="container text-center pb-5"> 
+                <h1 class=" my-4 text-white">
+                    Il tuo Biglietto
+                </h1>
+                <div class="row mt-4 my-border">
+                    <div class="col-4 pt-3 my-bg-color-white my-size">
+                        <h4>
+                            Nome Passeggero
+                        </h4>
+                        <span id="passenger-name" class="fs-3"></span>
+                    </div> 
+                    <div class="col-2 mt-3">
+                        <h4>
+                            Offerta
+                        </h4> 
+                        <span id="offert" class="fs-3"></span>
+                    </div> 
+                    <div class="col-2 mt-3">
+                        <h4>
+                            Carrozza
+                        </h4> 
+                        <span id="carriage" class="fs-3"></span>
+                    </div>
+                    <div class="col-2 mt-3">
+                        <h4>
+                            Codice CP
+                        </h4> 
+                        <span id="cp" class="fs-3"></span>
+                    </div> 
+                    <div class="col-2 mt-3">
+                        <h4>
+                            Costo Biglietto
+                        </h4> 
+                        <span id="ticket-price" class="fs-3"></span>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <!-- /Ticket -->
     </main>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
