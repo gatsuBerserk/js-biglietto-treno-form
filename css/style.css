@@ -1,0 +1,8 @@
+.my-bg-color{
+    background-color: tomato;
+} 
+
+.my-border{
+    border: 1px solid yellow;
+    border-radius: 50px;
+}

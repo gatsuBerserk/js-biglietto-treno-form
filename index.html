@@ -9,7 +9,55 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Biglietto treno form Carmine Passante classe 55</title>
 </head>
-<body>
+<body> 
+    <main > 
+        <section id="info">
+            <div class="container-fluid">
+                <div class="row text-center mt-4">
+                    <div class="col-12">
+                        <h1>
+                            Calcola il prezzo del tuo biglietto
+                        </h1>
+                    </div>  
+                </div> 
+            </div>  
+            <div class="container mt-4">
+                <div class="row text-center my-border">
+                    <div class="col-4 mt-3">
+                        <h4>
+                            Nome e cognome
+                        </h4>
+                        <input type="text" placeholder="Nome e Cognome">
+                    </div> 
+                    <div class="col-4 mt-3">
+                        <h4>
+                            Km da percorrere
+                        </h4> 
+                        <input type="text" placeholder="Km">
+                    </div> 
+                    <div class="col-4 mt-3">
+                        <h4>
+                            Fascia d'età
+                        </h4> 
+                        <select name="" id="age"> 
+                            <option value="underage">Minorenne</option>
+                            <option value="adult">Maggiorenne</option> 
+                            <option value="over">Over 65</option>
+                        </select>
+                    </div> 
+                
+                    <div class="col-12 text-center mt-5 ">
+                        <button type="button" class="btn btn-outline-success" id="sending">
+                            Genera
+                        </button>
+                        <button type="button" class="btn btn-outline-danger" id="cancel">
+                            Annulla
+                        </button>
+                    </div> 
+                </div>
+            </div>
+        </section>
+    </main>
     <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
