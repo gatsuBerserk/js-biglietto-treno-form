@@ -10,4 +10,9 @@ sendingButtom.addEventListener("click", function(){
     console.log(age); 
     let costTrip= (kmTrip * 0.27).toFixed(2);
     console.log(costTrip + "€");
+}) 
+
+cancelButtom.addEventListener("click", function(){
+    document.getElementById("name-user").value= ""; 
+    document.getElementById("km-trip").value= "";
 })
