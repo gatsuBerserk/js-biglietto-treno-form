@@ -6,7 +6,12 @@ sendingButtom.addEventListener("click", function(){
     const infoUser = document.getElementById("name-user").value; 
     document.getElementById("passenger-name").innerHTML=infoUser;
     console.log(infoUser);
-    const kmTrip =document.getElementById("km-trip").value;
+    const kmTrip =parseInt(document.getElementById("km-trip").value);  
+    
+    // Condition controll
+    if (isNaN (kmTrip)){
+        alert("Inserire correttamente i chilometri");
+    };
     console.log(kmTrip);
     const age = document.getElementById("age").value;
     console.log(age); 
@@ -20,10 +25,6 @@ sendingButtom.addEventListener("click", function(){
     document.getElementById("carriage").innerHTML= carriage; 
     let cp = Math.floor(Math.random() * 10000) + 1; 
     document.getElementById("cp").innerHTML= cp; 
-   
-    // Screen printing ticket   
-    document.getElementById('ticket').classList.remove('d-none');
-    document.getElementById('ticket').classList.add('d-block'); 
     
     // Conditions for discount on the ticket
     if ( age === "underage"){
@@ -42,6 +43,11 @@ sendingButtom.addEventListener("click", function(){
         document.getElementById("offert").innerHTML= "Standard";  
         console.log(costTrip + "€")
     }
+
+     // Screen printing ticket   
+     document.getElementById('ticket').classList.remove('d-none');
+     document.getElementById('ticket').classList.add('d-block');
+
 }); 
 
 // Cancell All buttom
